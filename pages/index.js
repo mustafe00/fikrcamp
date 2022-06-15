@@ -4,7 +4,10 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { HomeStories } from "./components/homeStories";
 import { Story } from "./components/Story";
+import { StoriesLoading } from "./components/StoriesLoading";
+
 export default function Home() {
+  const [loading, setLoading] = useState(true);
   const [stories, setStories] = useState([]);
   const [read, setRead] = useState({ story: {}, open: false });
   useEffect(() => {
@@ -12,6 +15,7 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         setStories(data.data);
+        setLoading(false);
       });
   }, []);
 
@@ -179,7 +183,13 @@ export default function Home() {
                 index={index}
               />
             ))}
+            {loading === true && <StoriesLoading />}
           </div>
+          {loading === false && stories.length == 0 && (
+            <div className="text-center ">
+              <h1>Sorry there are no stories currently😔</h1>
+            </div>
+          )}
         </div>
       </div>
       {/*  MEET OUT GRADS */}

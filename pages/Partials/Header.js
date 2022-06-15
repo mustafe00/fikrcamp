@@ -28,7 +28,11 @@ function Header() {
                 Success Stories
               </li>
             </Link>
-            <li className="cursor-pointer hover:text-primary">Free webinars</li>
+            <Link href="/webinars">
+              <li className="cursor-pointer hover:text-primary">
+                Free webinars
+              </li>
+            </Link>
             <li>
               <button className=" bg-primary text-white px-3 py-2 rounded text-sm">
                 Apply Now

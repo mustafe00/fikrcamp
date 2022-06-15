@@ -4,7 +4,9 @@ import Footer from "./Partials/Footer";
 import { HomeStories } from "./components/homeStories";
 import { useState, useEffect } from "react";
 import { Story } from "./components/Story";
+import { StoriesLoading } from "./components/StoriesLoading";
 function Stories() {
+  const [loading, setLoading] = useState(true);
   const [stories, setStories] = useState([]);
   const [read, setRead] = useState({ story: {}, open: false });
   useEffect(() => {
@@ -12,6 +14,7 @@ function Stories() {
       .then((res) => res.json())
       .then((data) => {
         setStories(data.data);
+        setLoading(false);
       });
   }, []);
   function readStory(index) {
@@ -70,8 +73,15 @@ function Stories() {
               index={index}
             />
           ))}
+
+          {loading === true && <StoriesLoading />}
           {/* CARD */}
         </div>
+        {loading === false && stories.length == 0 && (
+          <div className="text-center ">
+            <h1>Sorry there are no stories currently😔</h1>
+          </div>
+        )}
       </div>
       {/* SUCCESS STORIES */}
       <Footer />
