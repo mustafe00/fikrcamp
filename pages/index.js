@@ -2,7 +2,7 @@ import Header from "./Partials/Header";
 import Footer from "./Partials/Footer";
 import { useEffect } from "react";
 import { useState } from "react";
-import { HomeStories } from "./components/homeStories";
+import { HomeStories } from "./components/HomeStories";
 import { Story } from "./components/Story";
 import { StoriesLoading } from "./components/StoriesLoading";
 
