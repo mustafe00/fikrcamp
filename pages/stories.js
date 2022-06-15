@@ -1,7 +1,7 @@
 import Header from "./Partials/Header";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Footer from "./Partials/Footer";
-import { HomeStories } from "./components/homeStories";
+import { HomeStories } from "./components/HomeStories";
 import { useState, useEffect } from "react";
 import { Story } from "./components/Story";
 import { StoriesLoading } from "./components/StoriesLoading";
