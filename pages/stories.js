@@ -33,13 +33,13 @@ function Stories() {
           </div>
           <div className="flex-1">
             <h2 className="text-[35px] font-black leading-tight">
-              Meet our <span className="text-primary">graduates</span> who've
+              Meet our <span className="text-primary">graduates</span> whove
               taken the tech world by storm
             </h2>
             <p className="py-5">
-              "Change your life, learn to code": our alumni stories reflect our
-              motto. See how our 15,012 graduates started their new careers in
-              tech, and get inspired to find your own path.
+              &quot;Change your life, learn to code&quot;: our alumni stories
+              reflect our motto. See how our 15,012 graduates started their new
+              careers in tech, and get inspired to find your own path.
             </p>
             <div className="grid grid-cols-2 text-center gap-4">
               <div>
