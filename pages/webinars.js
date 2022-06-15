@@ -1,6 +1,6 @@
 import Header from "./Partials/Header";
 import { useState, useEffect } from "react";
-import { Webinar } from "./components/Webinar";
+import { Webinar } from "../components/Webinar";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 export default function Webinars() {
