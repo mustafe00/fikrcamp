@@ -5,6 +5,7 @@ import { useState } from "react";
 import { HomeStories } from "../components/HomeStories";
 import { Story } from "../components/Story";
 import { StoriesLoading } from "../components/StoriesLoading";
+import Link from "next/link";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -15,6 +16,7 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         setStories(data.data);
+        // for(let i=0)
         setLoading(false);
       });
   }, []);
@@ -45,9 +47,11 @@ export default function Home() {
               100% Somali Content | Qualified Instructors | Community
             </p>
             <div>
-              <button className=" bg-primary text-white px-6 py-3 rounded text-sm font-bold">
-                View Courses
-              </button>
+              <Link href="/courses">
+                <button className=" bg-primary text-white px-6 py-3 rounded text-sm font-bold">
+                  View Course
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -93,9 +97,11 @@ export default function Home() {
             </p>
             <p className="font-extrabold">June 24th, 2022</p>
             <div>
-              <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
-                Learn More
-              </button>
+              <Link href="/courses">
+                <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
           <div className="border-2 border-background bg-white p-5 flex flex-col space-y-2 w-[430px] m-2">
@@ -106,9 +112,11 @@ export default function Home() {
             </p>
             <p className="font-extrabold">June 24th, 2022</p>
             <div>
-              <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
-                Learn More
-              </button>
+              <Link href="/courses">
+                <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -205,9 +213,15 @@ export default function Home() {
               Want to get a feel of tech before you commit? Join our slack
               community
             </p>
-            <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
-              Join Channel!
-            </button>
+            <a
+              href="https://buff.ly/3JM2AUW"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
+                Join Channel!
+              </button>
+            </a>
           </div>
         </div>
       </div>

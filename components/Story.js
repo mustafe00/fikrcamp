@@ -1,6 +1,20 @@
 import { MdClose } from "react-icons/md";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 export function Story({ read, story, body }) {
+  const Bold = ({ children }) => <span className="bold">{children}</span>;
+
+  const Text = ({ children }) => <p className="align-center">{children}</p>;
+  const options = {
+    renderMark: {
+      [MARKS.BOLD]: (text) => <b>{text}</b>,
+    },
+    renderNode: {
+      [BLOCKS.PARAGRAPH]: (node, children) => (
+        <p className="py-2">{children}</p>
+      ),
+    },
+  };
   return (
     <div className="flex justify-center">
       <div
@@ -32,7 +46,7 @@ export function Story({ read, story, body }) {
                 </div>
               </div>
               <div className="py-2">
-                {documentToReactComponents(story.story)}
+                {documentToReactComponents(story.story, options)}
               </div>
             </div>
           </div>

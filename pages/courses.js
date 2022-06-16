@@ -1,4 +1,5 @@
 import Header from "./Partials/Header";
+import Footer from "./Partials/Footer";
 function Courses() {
   return (
     <div>
@@ -21,15 +22,118 @@ function Courses() {
           </div>
         </div>
         <div className="hidden md:block w-1/2">
-          <img src="./coding.jpg" className="w-full bg-white p-3 rounded" />
+          <img src="./development.png" className="w-full p-3 rounded" />
         </div>
       </div>
       {/* HERO SECTION */}
       {/* COURSE DETAILS */}
       <div className="py-5 bg-background">
-        <div className="container">one</div>
+        <div className="container flex justify-center">
+          <div className="md:w-2/3 text-center flex flex-col items-center space-y-4 ">
+            <h2 className="text-[30px] font-bold leading-tight">
+              What will you <span className="text-primary">learn</span> in 16
+              weeks you ask?
+            </h2>
+            <p>
+              Your hard work and commitment will transform you into a Full-stack
+              Web Developer. Build from scratch with JavaScript, NOSQL, HTML and
+              CSS. Accelerate your projects with ReactJS and Express. You will
+              be shocked at how much you can learn - employers will be too.
+            </p>
+            <div className="md:w-2/3 text-left flex flex-col space-y-3">
+              <div className="bg-white p-5 rounded">
+                <b>Week 1:</b> Intro to this web devlopment & Git
+              </div>
+              <div className="bg-white p-5 rounded">
+                <b>Week 2:</b> HTML & CSS
+              </div>
+              <div className="bg-white p-5 rounded">
+                <b>Week 3 & 4:</b> JS Fundementals Part I
+              </div>
+              <div className="bg-white p-5 rounded">
+                <b>Week 5 & 6:</b> JS Fundementals Part II & DOM Manipulation
+              </div>
+              <div className="bg-white p-5 rounded">
+                <b>Week 7:</b> Intro To APIs
+              </div>
+              <div className="bg-white p-5 rounded">
+                <b>Week 8 & 9:</b> React JS
+              </div>
+              <div className="bg-white p-5 rounded">
+                <b>Week 10 & 11:</b> Express JS & RESTful APIs
+              </div>
+              <div className="bg-white p-5 rounded">
+                <b>Week 12:</b> Intro to NoSQL & Data Modeling
+              </div>
+              <div className="bg-white p-5 rounded">
+                <b>Week 13 - 15:</b> Project
+              </div>
+              <div className="bg-white p-5 rounded">
+                <b>Week 16:</b> Deployment! 🎉
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* COURSE DETAILS */}
+      {/* COURSE XAYSIIS */}
+      <div className="container bg-white py-5 ">
+        <div className="flex justify-center">
+          <div className="text-center md:w-3/5">
+            <h2 className="text-[30px] font-bold leading-tight pb-3">
+              Exceptionally designed. Focused on your{" "}
+              <span className="text-primary">success.</span>
+            </h2>
+            <p>
+              We are engineers and educators. We know the skills that make a
+              solid programmer and how to teach them to you.
+            </p>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-3 gap-4 py-7">
+          <div className="border border-lightGray rounded p-4 text-center flex flex-col justify-between">
+            <div>
+              <h3 className="py-3 text-xl font-semibold ">
+                Fast paced learning
+              </h3>
+              <p className="text-sm">
+                Come prepared to work hard and problem solve. You will be
+                presented with coding challenges that will accelerate your
+                understanding of the core concepts taught.
+              </p>
+            </div>
+            <img src="./fast.png" alt="take off" />
+          </div>
+          <div className="border border-lightGray rounded p-4 text-center flex flex-col justify-between">
+            <div>
+              <h3 className="py-3 text-xl font-semibold">Hands-on Coding</h3>
+              <p className="text-sm">
+                Over 75% of your time at FikrCamp will be focused on building
+                software. After all, that's why you are here, right?
+              </p>
+            </div>
+            <img src="./build.png" alt="take off" />
+          </div>
+          <div className="border border-lightGray rounded p-4 text-center flex flex-col justify-between">
+            <div>
+              <h3 className="py-3 text-xl font-semibold ">
+                Community Of Developers
+              </h3>
+              <p className="text-sm">
+                You'll have access to industry mentors from a diverse set of
+                backgrounds and experiences. That means you'll get both
+                in-person and online support with experts, who spend their day
+                jobs as developers.
+              </p>
+            </div>
+            <img src="./community.png" alt="take off" />
+          </div>
+        </div>
+      </div>
+      {/* COURSE XAYSIIS */}
+      <div className="bg-white">
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -10,7 +10,6 @@ export default function handler(req, res) {
   client
     .getEntries({ content_type: "webinars" })
     .then(function (entry) {
-      console.log(entry);
       res.status(200).json({ data: entry.items });
     })
     .catch((e) => {

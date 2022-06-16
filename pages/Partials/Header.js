@@ -20,16 +20,16 @@ function Header() {
         </div>
         <div>
           <ul className="flex space-x-3 items-center ">
-            {/* <Link href="/courses">
+            <Link href="/courses">
               <li className="cursor-pointer hover:text-primary">Courses</li>
-            </Link> */}
+            </Link>
             <Link href="/stories">
-              <li className="cursor-pointer hover:text-primary">
+              <li className="cursor-pointer hover:text-primary text-[15px]">
                 Success Stories
               </li>
             </Link>
             <Link href="/webinars">
-              <li className="cursor-pointer hover:text-primary">
+              <li className="cursor-pointer hover:text-primary text-[15px]">
                 Free webinars
               </li>
             </Link>
