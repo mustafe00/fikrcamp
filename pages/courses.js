@@ -109,7 +109,7 @@ function Courses() {
               <h3 className="py-3 text-xl font-semibold">Hands-on Coding</h3>
               <p className="text-sm">
                 Over 75% of your time at FikrCamp will be focused on building
-                software. After all, that's why you are here, right?
+                software. After all, that is why you are here, right?
               </p>
             </div>
             <img src="./build.png" alt="take off" />
@@ -120,8 +120,8 @@ function Courses() {
                 Community Of Developers
               </h3>
               <p className="text-sm">
-                You'll have access to industry mentors from a diverse set of
-                backgrounds and experiences. That means you'll get both
+                You will have access to industry mentors from a diverse set of
+                backgrounds and experiences. That means you will get both
                 in-person and online support with experts, who spend their day
                 jobs as developers.
               </p>
