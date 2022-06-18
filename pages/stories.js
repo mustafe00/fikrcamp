@@ -10,7 +10,7 @@ function Stories() {
   const [stories, setStories] = useState([]);
   const [read, setRead] = useState({ story: {}, open: false });
   useEffect(() => {
-    fetch("api/stories")
+    fetch("api/stories?limit=20")
       .then((res) => res.json())
       .then((data) => {
         setStories(data.data);

@@ -12,11 +12,13 @@ export default function Home() {
   const [stories, setStories] = useState([]);
   const [read, setRead] = useState({ story: {}, open: false });
   useEffect(() => {
-    fetch("api/stories")
+    fetch("api/stories?limit=4")
       .then((res) => res.json())
       .then((data) => {
+        for (let i = 0; i < 4; i++) {
+          console.log(data.data[i]);
+        }
         setStories(data.data);
-        // for(let i=0)
         setLoading(false);
       });
   }, []);
@@ -93,9 +95,9 @@ export default function Home() {
             <h2 className="font-extrabold">Web development - Batch-105</h2>
             <p>
               Learn JavaScript and build a career in code with our accelerated
-              Full Stack JavaScript course.
+              Full Stack course.
             </p>
-            <p className="font-extrabold">June 24th, 2022</p>
+            <p className="font-extrabold">July 24th, 2022</p>
             <div>
               <Link href="/courses">
                 <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
@@ -108,9 +110,9 @@ export default function Home() {
             <h2 className="font-extrabold">Web development - Batch-106</h2>
             <p>
               Learn JavaScript and build a career in code with our accelerated
-              Full Stack JavaScript course.
+              Full Stack course.
             </p>
-            <p className="font-extrabold">June 24th, 2022</p>
+            <p className="font-extrabold">July 24th, 2022</p>
             <div>
               <Link href="/courses">
                 <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
@@ -128,11 +130,11 @@ export default function Home() {
         <h2 className="text-[30px] font-black leading-tight text-center py-5">
           Local Hiring Partners
         </h2>
-        <div className="flex justify-center">
-          <img src="./somtel.jpg" className="h-[100px] m-2" />
-          <img src="./telesom.jpg" className="h-[100px] m-2" />
+        <div className="flex flex-wrap justify-center items-center">
+          <img src="./somdigital.png" className="h-[70px] m-2" />
+          <img src="./sahaltech.png" className="h-[45px] m-2" />
           <img src="./wayeel.jpg" className="h-[100px] m-2" />
-          <img src="./somtel.jpg" className="h-[100px] m-2" />
+          <img src="./gts.png" className="h-[45px] m-2" />
         </div>
       </div>
       {/* HIRING PARTNERS */}
@@ -175,13 +177,7 @@ export default function Home() {
             common: they decided to learn to code to become autonomous and use
             their new skills to pursue their dreams.
           </p>
-          {/* {stories.length > 0 && (
-            <div className="flex flex-wrap py-4 ">
-              {stories.map((story) => (
-                <HomeStories key={story.id} data={story.fields} />
-              ))}
-            </div>
-          )} */}
+
           <div className="flex flex-wrap py-4 ">
             {stories.map((story, index) => (
               <HomeStories

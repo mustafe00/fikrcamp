@@ -6,7 +6,14 @@ export function Webinar({ data }) {
   return (
     <div className="bg-white p-5 rounded shadow-sm ">
       <div className="flex flex-col space-y-4">
-        <h2 className="text-[25px] font-bold leading-tight">{data.title}</h2>
+        <div className="flex justify-between">
+          <h2 className="text-[25px] font-bold leading-tight">{data.title}</h2>
+          {/* <span className="border border-primary text-xs p-0 m-0 rounded">
+            {dateFormat(Date.now(), "yyyy-mm-dd") > data.date
+              ? "happned"
+              : "hasnt"}
+          </span> */}
+        </div>
         <p>{data.description}</p>
         <div className="border border-lightGray rounded p-3 flex justify-between items-center">
           <div>

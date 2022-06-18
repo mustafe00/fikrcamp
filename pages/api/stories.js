@@ -8,7 +8,7 @@ var client = contentful.createClient({
 
 export default function handler(req, res) {
   client
-    .getEntries({ content_type: "stories" })
+    .getEntries({ content_type: "stories", limit: req.query.limit })
     .then(function (entry) {
       res.status(200).json({ data: entry.items });
     })
