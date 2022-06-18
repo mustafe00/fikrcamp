@@ -27,7 +27,7 @@ function Stories() {
       {read.open && <Story read={readStory} story={read.story} />}
       {/* HEADER */}
       <div className="bg-white">
-        <div className=" py-5 container flex space-x-10">
+        <div className="py-5 container flex md:space-x-10">
           <div className="hidden lg:block flex-1">
             <img src="./space.jpg" className="w-full rounded" />
           </div>
