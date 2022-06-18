@@ -2,7 +2,7 @@ import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <div className="border-t border-lightGray">
+    <div className="border-t border-lightGray bg-white">
       <div className="container ">
         <div className="py-5">
           <div className="grid grid-cols-3 gap-4 items-center">

@@ -29,11 +29,15 @@ export function Webinar({ data }) {
               {data.language}
             </p>
           </div>
-          <a href={data.link} target="_blank" rel="noopener noreferrer">
-            <button className=" bg-primary text-white px-5 py-3 rounded">
-              Register
-            </button>
-          </a>
+          {dateFormat(Date.now(), "yyyy-mm-dd") > data.date ? (
+            <h2 className="text-orange font-semibold">Event Ended</h2>
+          ) : (
+            <a href={data.link} target="_blank" rel="noopener noreferrer">
+              <button className=" bg-primary text-white px-5 py-3 rounded">
+                Register
+              </button>
+            </a>
+          )}
         </div>
       </div>
     </div>

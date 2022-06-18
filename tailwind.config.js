@@ -30,6 +30,7 @@ module.exports = {
       sBackground: "#fff2d5",
       lightPrimary: "#e5f1ff",
       lightGray: "#f0f0f0",
+      orange: "#bf6b1c",
       // secondary: "#e7f2ff",
       gold: "#f8b335",
       white: "#ffffff",

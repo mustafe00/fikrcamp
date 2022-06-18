@@ -214,7 +214,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
+              <button className="border-2 border-primary text-primary px-3 py-2 text-sm mt-3">
                 Join Channel!
               </button>
             </a>

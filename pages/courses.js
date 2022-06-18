@@ -131,9 +131,33 @@ function Courses() {
         </div>
       </div>
       {/* COURSE XAYSIIS */}
-      <div className="bg-white">
-        <Footer />
+      {/* JOIN THE COMMUNITY */}
+      <div className=" py-10 flex justify-center items-center bg-sBackground">
+        <div className="rounded-lg p-10 flex justify-center ">
+          <div className="w-3/4 text-center">
+            <h2 className="text-[30px] font-black leading-tight py-4">
+              Are you ready to break into{" "}
+              <span className="text-primary">tech?</span>
+            </h2>
+            <p>
+              Want to get a feel of tech before you commit? Join our slack
+              community
+            </p>
+            <a
+              href="https://buff.ly/3JM2AUW"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="border-2 border-primary text-primary px-3 py-2 text-sm mt-3">
+                Join Channel!
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
+      {/* JOIN THE COMMUNITY */}
+
+      <Footer />
     </div>
   );
 }
