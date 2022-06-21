@@ -100,7 +100,11 @@ function Header() {
             {/* <div className="flex justify-center my-1">
               <div className="border-b-2 border-gray w-24"></div>
             </div> */}
-            <a href="https://forms.gle/jUoFSkkdDcUga3GB8">
+            <a
+              href="https://forms.gle/jUoFSkkdDcUga3GB8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className=" bg-primary text-white px-3 py-2 rounded text-sm">
                 Apply Now
               </button>
