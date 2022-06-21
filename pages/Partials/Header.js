@@ -31,9 +31,11 @@ function Header() {
               </li>
             </Link>
             <li>
-              <button className=" bg-primary text-white px-3 py-2 rounded text-sm">
-                Apply Now
-              </button>
+              <a href="https://forms.gle/jUoFSkkdDcUga3GB8">
+                <button className=" bg-primary text-white px-3 py-2 rounded text-sm">
+                  Apply Now
+                </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -98,9 +100,11 @@ function Header() {
             {/* <div className="flex justify-center my-1">
               <div className="border-b-2 border-gray w-24"></div>
             </div> */}
-            <button className=" bg-primary text-white px-3 py-2 rounded text-sm">
-              Apply Now
-            </button>
+            <a href="https://forms.gle/jUoFSkkdDcUga3GB8">
+              <button className=" bg-primary text-white px-3 py-2 rounded text-sm">
+                Apply Now
+              </button>
+            </a>
           </div>
         </div>
       )}

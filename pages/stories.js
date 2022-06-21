@@ -37,9 +37,10 @@ function Stories() {
               taken the tech world by storm
             </h2>
             <p className="py-5">
-              &quot;Change your life, learn to code&quot;: our alumni stories
-              reflect our motto. See how our 15,012 graduates started their new
-              careers in tech, and get inspired to find your own path.
+              Students come through the bootcamp to gain the nexassry skills to
+              navigate through the tech seen and so far we have had multiple
+              success stories. See how our graduates started their new careers
+              in tech, and get inspired to find your own path.
             </p>
             <div className="grid grid-cols-2 text-center gap-4">
               <div>

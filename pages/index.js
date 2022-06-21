@@ -148,20 +148,22 @@ export default function Home() {
 
           <div className="">
             <h2 className="font-bold text-[25px]">
-              From refugee to full stack developer in just 4 months
+              Journey of <span className="text-primary">Hussein</span> to
+              becoming a full stack developer in just 4 months
             </h2>
-            <div className="border-l-2 border-primary pl-2">
+            <div className="border-l-2 border-primary pl-2 my-3">
               <p>
-                <span className="font-bold text-[20px]">&quot;</span>I am a deaf
-                Yemani refugee who lost his hearing and hair due to a missle
-                strike that destroyed my home. I came to Hargeisa looking for a
-                better opportunity and i was lucky enough to enroll at Fikrcamp
-                and finish the bootcamp in Nov 2021. Two months later i found a
-                job! Fikrcamp has changed my life.
+                <span className="font-bold text-[20px]">&quot;</span>The
+                Fikrcamps environment was really different, I like the sense of
+                flexibility and the ability to engage with other people.
+                Fikrcamp, on the other hand, did not place a high value on
+                attendance or exercise delivery, but instead placed the entire
+                burden of responsibility on the student, which was a big shift
+                in mindset for me
                 <span className="font-bold text-[20px]">&quot;</span>
               </p>
             </div>
-            <b>Huessein Mohamed</b>
+            <b>Hussein Mohamed</b>
           </div>
         </div>
       </div>

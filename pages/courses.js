@@ -12,7 +12,7 @@ function Courses() {
           </h2>
           <p className="text-xl">Full-Time (16-weeks)</p>
           <p>
-            In 9 intensive weeks, learn all the skills of a Software Developer,
+            In 16 intensive weeks, learn all the skills of a Software Developer,
             code your own web applications from scratch and change your career.
           </p>
           <div>
