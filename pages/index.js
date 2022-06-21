@@ -34,9 +34,45 @@ export default function Home() {
       {read.open && <Story read={readStory} story={read.story} />}
       <PageHead title={"FikrCamp - Home"} />
       <Header />
-
+      {/* BANNER HEADER */}
+      <div
+        className="container grid md:grid-cols-2 gap-4 py-10 bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url("/back.png")` }}
+      >
+        <div className="flex items-center text-center md:text-left pattern-yh">
+          <div>
+            <h3 className="text-[40px] font-pans my-5">
+              Dont just be a <span className="text-primary">coder</span> be a{" "}
+              <span className="text-primary">coder</span> that stands out!
+            </h3>
+            <p className="text-lg">
+              Become a full stack developer in just 16 weeks with the assistance
+              of expert instructors and mentors!!
+            </p>
+            <p className="font-semibold  my-3 ">
+              100% Somali Content | Qualified Instructors | Community
+            </p>
+            <div>
+              <Link href="/courses">
+                <button className=" bg-primary text-white px-6 py-3 text-sm font-bold mr-2">
+                  View Course
+                </button>
+              </Link>
+              <a href="/info.pdf" target="_blank" rel="noreferrer">
+                <button className="border-2 border-primary text-primary px-6 py-2.5 text-sm">
+                  Curriculum
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="hidden md:block">
+          <img src="./new_banner.png" alt="banner" />
+        </div>
+      </div>
+      {/* BANNER HEADER */}
       {/* HERO SECTION */}
-      <div className="bg-background">
+      {/* <div className="bg-background">
         <div className="container py-24 flex justify-center">
           <div className="flex flex-col space-y-5 text-center w-4/5 md:w-2/4">
             <h2 className="text-[45px] font-black leading-tight">
@@ -59,30 +95,32 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* HERO SECTION */}
       {/* ABOUT SECTION */}
-      <div className="container py-5">
-        <div className="flex space-x-10">
-          <div className="flex-1 flex flex-col justify-center">
-            <h3 className="text-2xl md:text-3xl">
-              <span className="w-min p-1 mr-1 text-2xl md:text-3xl  text-primary bg-background">
-                Fikrcamp
-              </span>
-              teaches you the skills to launch a tech career — and the outcomes
-              prove it
-            </h3>
-            <p className="my-4 text-sm">
-              We are Somalilands very first coding bootcamp. Students go through
-              a 16-week program where they are taught programming skills that
-              employers look for using the latest technologies. The teaching
-              method we provide is “by doing” hence basic skills such as
-              teamwork, problem solving and critical thinking are all integrated
-              into the learning progress.
-            </p>
-          </div>
-          <div className="hidden md:block flex-1">
-            <img src="./space.jpg" className="rounded-md" />
+      <div className="bg-background">
+        <div className="container py-8">
+          <div className="flex space-x-10">
+            <div className="flex-1 flex flex-col justify-center">
+              <h3 className="text-2xl md:text-3xl">
+                <span className="w-min p-1 mr-1 text-2xl md:text-3xl  text-primary bg-background">
+                  Fikrcamp
+                </span>
+                teaches you the skills to launch a tech career — and the
+                outcomes prove it
+              </h3>
+              <p className="my-4 text-sm">
+                We are Somalilands very first coding bootcamp. Students go
+                through a 16-week program where they are taught programming
+                skills that employers look for using the latest technologies.
+                The teaching method we provide is “by doing” hence basic skills
+                such as teamwork, problem solving and critical thinking are all
+                integrated into the learning progress.
+              </p>
+            </div>
+            <div className="hidden md:block flex-1">
+              <img src="./space.jpg" className="rounded-md" />
+            </div>
           </div>
         </div>
       </div>

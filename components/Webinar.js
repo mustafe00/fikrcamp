@@ -5,17 +5,13 @@ import Link from "next/link";
 export function Webinar({ data }) {
   return (
     <div className="bg-white p-5 rounded shadow-sm ">
-      <div className="flex flex-col space-y-4">
-        <div className="flex justify-between">
+      <div className="flex flex-col justify-between  h-full">
+        <div>
           <h2 className="text-[25px] font-bold leading-tight">{data.title}</h2>
-          {/* <span className="border border-primary text-xs p-0 m-0 rounded">
-            {dateFormat(Date.now(), "yyyy-mm-dd") > data.date
-              ? "happned"
-              : "hasnt"}
-          </span> */}
+          <p className="py-4">{data.description}</p>
         </div>
-        <p>{data.description}</p>
-        <div className="border border-lightGray rounded p-3 flex justify-between items-center">
+
+        <div className=" border border-lightGray rounded p-3 flex justify-between items-center">
           <div>
             <h2 className="text-[15px] font-bold leading-tight">
               {dateFormat(data.date, "ddd, mmmm d, yyyy")}

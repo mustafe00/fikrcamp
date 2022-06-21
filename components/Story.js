@@ -29,7 +29,7 @@ export function Story({ read, story, body }) {
             </button>
           </div>
           <div className="flex justify-center">
-            <div className="w-3/4 justify-center">
+            <div className="w-11/12 md:w-3/4 justify-center">
               <h2 className="font-bold text-[35px] text-center leading-10">
                 {story.storyTitle}
               </h2>
@@ -47,6 +47,20 @@ export function Story({ read, story, body }) {
               </div>
               <div className="py-2">
                 {documentToReactComponents(story.story, options)}
+              </div>
+              <div className="bg-background p-4 rounded flex justify-between items-center">
+                <h2 className="font-semibold">
+                  Join our slack comunity to meet everyone!
+                </h2>
+                <a
+                  href="https://buff.ly/3JM2AUW"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className=" bg-primary text-white px-6 py-3 text-sm font-bold mr-2">
+                    Join!
+                  </button>
+                </a>
               </div>
             </div>
           </div>
