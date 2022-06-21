@@ -1,6 +1,7 @@
 import Header from "./Partials/Header";
 import { useState, useEffect } from "react";
 import { Webinar } from "../components/Webinar";
+import PageHead from "./Partials/PageHead";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 export default function Webinars() {
@@ -17,6 +18,7 @@ export default function Webinars() {
   }, []);
   return (
     <div>
+      <PageHead title={"FikrCamp - Webinars"} />
       <Header />
       {/* HEADER */}
       <div className="bg-gradient-to-b from-background py-10">

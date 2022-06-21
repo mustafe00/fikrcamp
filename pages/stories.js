@@ -5,6 +5,7 @@ import { HomeStories } from "../components/HomeStories";
 import { useState, useEffect } from "react";
 import { Story } from "../components/Story";
 import { StoriesLoading } from "../components/StoriesLoading";
+import PageHead from "./Partials/PageHead";
 function Stories() {
   const [loading, setLoading] = useState(true);
   const [stories, setStories] = useState([]);
@@ -23,6 +24,7 @@ function Stories() {
   }
   return (
     <div>
+      <PageHead title={"FikrCamp - Success Stories"} />
       <Header />
       {read.open && <Story read={readStory} story={read.story} />}
       {/* HEADER */}

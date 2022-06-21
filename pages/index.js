@@ -5,6 +5,7 @@ import { useState } from "react";
 import { HomeStories } from "../components/HomeStories";
 import { Story } from "../components/Story";
 import { StoriesLoading } from "../components/StoriesLoading";
+import PageHead from "./Partials/PageHead";
 import Link from "next/link";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
   return (
     <div className="relative">
       {read.open && <Story read={readStory} story={read.story} />}
+      <PageHead title={"FikrCamp - Home"} />
       <Header />
 
       {/* HERO SECTION */}

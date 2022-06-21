@@ -1,8 +1,10 @@
 import Header from "./Partials/Header";
 import Footer from "./Partials/Footer";
+import PageHead from "./Partials/PageHead";
 function Courses() {
   return (
     <div>
+      <PageHead title={"FikrCamp - Web development bootcamp"} />
       <Header />
       {/* HERO SECTION */}
       <div className="container py-5 flex lg:space-x-20">
