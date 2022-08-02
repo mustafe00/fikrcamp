@@ -137,7 +137,7 @@ export default function Home() {
               Learn JavaScript and build a career in code with our accelerated
               Full Stack course.
             </p>
-            <p className="font-extrabold">July 24th, 2022</p>
+            <p className="font-extrabold">August 14th, 2022</p>
             <div>
               <Link href="/courses">
                 <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
@@ -152,7 +152,7 @@ export default function Home() {
               Learn JavaScript and build a career in code with our accelerated
               Full Stack course.
             </p>
-            <p className="font-extrabold">July 24th, 2022</p>
+            <p className="font-extrabold">August 14th, 2022</p>
             <div>
               <Link href="/courses">
                 <button className="border-2 border-primary text-primary px-3 py-2 text-sm">
