@@ -314,7 +314,7 @@ function Courses() {
             {/* KHALID SUBAAN */}
             <div className="flex space-x-3">
               <div className=" h-[200px] w-[180px]">
-                <div className="bg-[url(/khalid.jpeg')]  bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
+                <div className="bg-[url('/khalid.jpg')]  bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
               </div>
               <div className="py-4 relative ">
                 <div>
