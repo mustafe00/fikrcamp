@@ -285,7 +285,7 @@ function Courses() {
             {/* AHMED FUAD */}
             <div className="flex space-x-3">
               <div className=" h-[200px] w-[180px]">
-                <div className="bg-[url('../public/ahmed.jpg')]  bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
+                <div className="bg-[url('/ahmed.jpg')]  bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
               </div>
               <div className="py-4 relative ">
                 <div>
@@ -314,7 +314,7 @@ function Courses() {
             {/* KHALID SUBAAN */}
             <div className="flex space-x-3">
               <div className=" h-[200px] w-[180px]">
-                <div className="bg-[url('../public/khalid.jpeg')]  bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
+                <div className="bg-[url(/khalid.jpeg')]  bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
               </div>
               <div className="py-4 relative ">
                 <div>
@@ -342,7 +342,7 @@ function Courses() {
             {/* MUKHTAAR */}
             <div className="flex space-x-3">
               <div className=" h-[200px] w-[180px]">
-                <div className="bg-[url('../public/mukhtaar.jpg')] bg-center bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
+                <div className="bg-[url('/mukhtaar.jpg')] bg-center bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
               </div>
               <div className="py-4 relative ">
                 <div>
@@ -371,7 +371,7 @@ function Courses() {
             {/* ROBLE */}
             <div className="flex space-x-3">
               <div className=" h-[200px] w-[180px]">
-                <div className="bg-[url('../public/roble.jpg')] bg-center bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
+                <div className="bg-[url('/roble.jpg')] bg-center bg-no-repeat bg-cover h-[200px] w-[180px]"></div>
               </div>
               <div className="py-4 relative ">
                 <div>
