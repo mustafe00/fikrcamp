@@ -39,3 +39,15 @@ body {
     }
   }
 }
+
+.course-nav {
+  @apply bg-white py-3 px-5 rounded-md drop-shadow-sm flex-col items-center min-w-[140px] hover:cursor-pointer hover:font-semibold;
+}
+
+.course-nav-active {
+  @apply bg-white py-3 px-5 rounded-md drop-shadow-sm flex-col items-center min-w-[140px]  hover:cursor-pointer;
+}
+
+.course-nav-active h3 {
+  @apply font-bold text-primary;
+}

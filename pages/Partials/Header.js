@@ -31,7 +31,11 @@ function Header() {
               </li>
             </Link>
             <li>
-              <a href="https://forms.gle/jUoFSkkdDcUga3GB8">
+              <a
+                href="https://forms.gle/mk7TpqWa8yiXPtzj9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className=" bg-primary text-white px-3 py-2 rounded text-sm">
                   Apply Now
                 </button>
@@ -105,7 +109,7 @@ function Header() {
               <div className="border-b-2 border-gray w-24"></div>
             </div> */}
               <a
-                href="https://forms.gle/jUoFSkkdDcUga3GB8"
+                href="https://forms.gle/mk7TpqWa8yiXPtzj9"
                 target="_blank"
                 rel="noopener noreferrer"
               >
