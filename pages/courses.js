@@ -15,10 +15,11 @@ function Courses() {
       <Header />
       {/* HERO SECTION */}
       <div className="container py-5 flex lg:space-x-20">
-        <div className="flex flex-col space-y-3 justify-center md:w-1/2">
+        <div className="flex flex-col space-y-2 justify-center md:w-1/2">
           <h2 className="text-[30px] font-bold leading-tight">
             Online Web Development Bootcamp
           </h2>
+          <span className="text-[20px] font-bold text-primary">$40/month</span>
           <p className="text-xl">Full-Time and Self-paced (16-weeks)</p>
           <p>
             In 16 intensive weeks, this carefully curated curriculum teaches you
@@ -26,6 +27,7 @@ function Courses() {
             market. Go from a beginner, learn the skills and get a job working
             as a software engineer.
           </p>
+
           <div className="space-x-2">
             <a
               href="https://forms.gle/mk7TpqWa8yiXPtzj9"

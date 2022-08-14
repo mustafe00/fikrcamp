@@ -66,8 +66,10 @@ function Header() {
   }
   return (
     <>
-      <div className="bg-primary text-white font-semibold py-1">
-        <center>New intake coming soon...💪🏾</center>
+      <div className="bg-primary text-white font-semibold py-1 text-sm">
+        <center>
+          Cohort 3 registration ongoing limited seats apply now!🚀
+        </center>
       </div>
       <div className="py-3 shadow-md bg-white">
         <Mobile />
